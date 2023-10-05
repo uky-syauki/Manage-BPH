@@ -1,0 +1,65 @@
+
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Membuat Laporan</h5>
+      <!-- Floating Labels Form -->
+      <form class="row g-3" action="" method="post">
+            {{ form.hidden_tag() }}
+                <div class="mb-3">
+            <label for="inputDate" class="form-label">Tanggal</label>
+            <!-- <input type="date" class="form-control" id="inputDate" name="inputDate"> -->
+            {{ form.inputDate(class="form-control") }}
+        </div>
+        <div class="col-md-12">
+          <div class="form-floating">
+            <!-- <input type="text" class="form-control" id="floatingName" placeholder="Your Name"> -->
+            {{ form.namaFile(class="form-control", placeholder="Nama File") }}
+            <label for="namaFile">Nama File</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-floating">
+            <!-- <input type="text" class="form-control" id="floatingEmail" placeholder="Judul Laporan"> -->
+            {{ form.judulLaporan(class="form-control", placeholder="Judul Laporan") }}
+            <label for="judulLaporan">Judul Laporan</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-floating">
+            <!-- <input type="text" class="form-control" id="floatingPassword" placeholder="Heading"> -->
+            {{ form.heading(class="form-control", placeholder="Heading") }}
+            <label for="heading">Heading</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-floating">
+            <!-- <textarea class="form-control" placeholder="Address" id="floatingTextarea" style="height: 100px;"></textarea> -->
+            {{ form.isiLaporan(class="form-control", placeholder="Isi Laporan") }}
+            <label for="isiLaporan">Isi Laporan</label>
+          </div>
+        </div>
+        <!-- <div class="col-md-4">
+          <div class="form-floating mb-3">
+            <select class="form-select" id="floatingSelect" aria-label="State">
+              <option selected="">New York</option>
+              <option value="1">Oregon</option>
+              <option value="2">DC</option>
+            </select>
+            <label for="floatingSelect">State</label>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingZip" placeholder="Zip">
+            <label for="floatingZip">Zip</label>
+          </div>
+        </div> -->
+        <div class="text-center">
+            {{ form.submit(class="btn btn-primary") }}
+          <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+          <!-- <button type="reset" class="btn btn-secondary">Reset</button> -->
+        </div>
+      </form><!-- End floating Labels Form -->
+
+    </div>
+  </div>

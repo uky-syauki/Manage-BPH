@@ -366,7 +366,9 @@ h6 {
 
 .logo img {
   max-height: 40px;
-  margin-right: 6px;
+  /* margin-right: 6px; */
+  display: block;
+  margin: 8%;
 }
 
 .logo span {
@@ -383,6 +385,7 @@ h6 {
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
   background-color: #fff;
   padding-left: 20px;
+  width: 15.7rem;
   /* Toggle Sidebar Button */
   /* Search Bar */
 }
@@ -602,7 +605,8 @@ h6 {
   top: 60px;
   left: 0;
   bottom: 0;
-  width: 300px;
+  /* width: 300px; */
+  width: 250px;
   z-index: 996;
   transition: all 0.3s;
   padding: 20px;
@@ -633,7 +637,7 @@ h6 {
 
   #main,
   #footer {
-    margin-left: 300px;
+    margin-left: 251px;
   }
 }
 
