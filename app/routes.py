@@ -27,3 +27,13 @@ def laporan():
         document.buat(f"Humas/{form.namaFile.data}")
         return redirect(url_for('laporan'))
     return render_template('laporan.html', form=form, daftar_laporan=daftar_laporan)
+
+
+@app.route('/pembelajaran/laporan')
+def pembelajaran_laporan():
+    return render_template('pembelajaran/laporan.html')
+
+
+@app.route('/pembelajaran/pertemuan')
+def pembelajaran_pertemuan():
+    return render_template('pembelajaran/pertemuan.html')
