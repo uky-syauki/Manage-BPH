@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/ahmad/onGithub/VPS/vps3/Manage-BPH/venv"
+set -gx VIRTUAL_ENV "/home/ubuntu/coconut/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
