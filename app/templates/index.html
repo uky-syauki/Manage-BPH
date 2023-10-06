@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
 <div class="card">
     <div class="card-body">
       <h5 class="card-title">Tambahkan Calgot</h5>
@@ -30,9 +34,9 @@
       <table class="table">
         <thead>
           <tr>
-            <th scope="col" style="color: ">Nama Lengkap</th>
-            <th scope="col">Nomor Wa</th>
-            <th scope="col">Status</th>
+            <th scope="col" style="color: #012970;">Nama Lengkap</th>
+            <th scope="col" style="color: #012970;">Nomor Wa</th>
+            <th scope="col" style="color: #012970;">Status</th>
           </tr>
         </thead>
         <tbody>
@@ -63,7 +67,7 @@
             <td style="color: red;">Tidak Aktif</td>
           </tr>
           <tr class="table-info">
-            <th scope="row"><a href="#" style="color: red">Uky <sup>(wajah tidak di kenal)</sup></a></th>
+            <th scope="row"><a href="#" style="color: black">Uky <sup style="color: red">(wajah tidak di kenal)</sup></a></th>
             <td>085341955789</td>
             <td style="color: green;">Aktif</td>
           </tr>
@@ -88,3 +92,6 @@
 
     </div>
   </div>
+
+
+{% endblock %}
